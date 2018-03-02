@@ -2,6 +2,7 @@ package com.base.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Predicate;
 
 /**
@@ -32,6 +33,14 @@ public class Functionref {
         //lambda方法
         list.removeIf(e -> e == null);
         System.out.println(list.size());
+
+        list.add(null);
+        System.out.println(list.size());
+        list.removeIf(Objects::isNull); //方法引用 类::静态方法
+        System.out.println(list.size());
+
+        //list.forEach(x -> System.out.println(x));
+        list.forEach(System.out::println); //对象::实例方法
 
     }
 }
