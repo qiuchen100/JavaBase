@@ -32,5 +32,6 @@ public class Functionref {
         //lambda方法
         list.removeIf(e -> e == null);
         System.out.println(list.size());
+
     }
 }
