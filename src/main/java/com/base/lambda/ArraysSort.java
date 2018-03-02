@@ -27,8 +27,8 @@ public class ArraysSort {
             System.out.println(word);
         }
         System.out.println("----------以上是传统的实现方法，现在用lambda表达式来实现-----------");
-        //
-        //        //lambda表达式实现方式
+
+        //lambda表达式实现方式
         Arrays.sort(words, (x, y) -> y.length() - x.length());
         for (String word : words) {
             System.out.println(word);
