@@ -1,4 +1,4 @@
-package com.base.threads;
+package com.base.concurrent;
 
 
 import java.util.Collections;
@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class ConcurrentTest {
     static Map<String, String> map = Collections.synchronizedMap(new HashMap<String, String>());
+//    static HashMap<String, String> map = new HashMap<String, String>();
     static class MyThread extends Thread {
         String name;
 
@@ -16,7 +17,7 @@ public class ConcurrentTest {
 
         @Override
         public void run() {
-            for (int i = 0; i < 10000; i++) {
+            for (int i = 0; i < 100000; i++) {
                 map.put(name + i, i + "");
             }
         }

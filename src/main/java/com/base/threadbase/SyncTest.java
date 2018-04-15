@@ -1,4 +1,4 @@
-package com.base.threads;
+package com.base.threadbase;
 
 class PrintClass implements Runnable{
     public static int i = 0;
@@ -7,12 +7,13 @@ class PrintClass implements Runnable{
         synchronized (obj) {
             i = i + 1;
         }
+
         //System.out.println(PrintClass.i);
     }
 
     @Override
     public void run() {
-        for (int j = 0; j < 150000; j++) {
+        for (int j = 0; j < 15000; j++) {
             addI();
         }
     }

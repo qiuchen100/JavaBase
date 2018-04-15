@@ -1,4 +1,4 @@
-package com.base.threads;
+package com.base.threadbase;
 
 class ThreadA extends Thread{
     Object obj;
