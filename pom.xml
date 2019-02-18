@@ -7,7 +7,13 @@
     <groupId>com.base</groupId>
     <artifactId>JavaBase</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.mongodb.morphia</groupId>
+            <artifactId>morphia</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
