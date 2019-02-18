@@ -24,6 +24,8 @@ public class testMongo {
                 Date date = (Date) user.bizData.get("sendTime");
                 SimpleDateFormat myFmt =new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 System.out.println(myFmt.format(date));
+
+
             }
 
         }
